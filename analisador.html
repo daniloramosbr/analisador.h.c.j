@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="analisador.css">
+</head>
+<body>
+   <header>
+    <h1>
+        ANALISADOR DE NÚMEROS
+    </h1>
+   </header> 
+   <section>
+    <div>
+        Números (de 1 a 1000) <input type="number" name="txtnum" id="txtnum"> <input type="button" value="Adicionar" onclick="analisar()" >
+    </div>
+    <div>
+        <select name="txtsel" id="txtsel" size="6"></select>
+    </div>
+    <div>
+        <input type="button" value="Finalizar" onclick="finalizar()">
+    </div>
+    <div id="txtres">
+        
+    </div>
+    <div>
+       <br><input type="button" value="Limpar" id="txtlimp" onclick="limpar()"> 
+    </div>
+   </section>
+   <footer>
+    <p>
+        &copy;Dandev
+    </p>
+   </footer>
+   <script src="analisador.js"></script>
+</body>
+</html>
