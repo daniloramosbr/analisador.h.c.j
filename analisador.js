@@ -1,6 +1,7 @@
 let num = document.getElementById('txtnum')
 let sel = document.getElementById('txtsel')
 let res = document.getElementById('txtres')
+let clickadd = document.querySelector('.txtadd')
 let valores = []
 
 function numeros(n) {
@@ -26,6 +27,8 @@ function analisar() {
         sel.appendChild(item)
         num.value = ''
         num.focus()
+        
+        
     
     } else {
         window.alert('ERRO, NÚMERO INVALIDO OU JA ENCONTRADO')
@@ -58,7 +61,11 @@ function limpar() {
     sel.innerHTML = ''
     valores = []
 }
-
+clickadd.addEventListener('click',() => {
+    if (res.innerHTML != '') {
+        limpar()
+    }
+})
 num.addEventListener('keyup', function(e){
     var key = e.which || e.keyCode;
     if (key == 13) { // codigo da tecla enter
